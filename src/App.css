@@ -56,3 +56,13 @@
   background-color: #E0752F;
 }
 
+.section-contact{
+  background-color: #f2f4f1;
+}
+
+.section-image-container{
+  background-image: url('./images/contact-image.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
