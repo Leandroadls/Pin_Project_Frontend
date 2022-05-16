@@ -10,20 +10,22 @@ import "./styles/app.css";
 function App() {
   return (
       <div>
-        <section id="home" className="row section-landing">
-          <div className="row section-navbar section-navbar">
-            <Navbar />
-          </div>
-          <div className="row landing-content" >
-            <div className="col-1"></div>
-            <div className="col-8"><Landing/></div>
-            <div className="col-3"></div>
+        <section id="home" className="container-fluid section-landing">
+          <div className="row">
+            <div className="row section-navbar section-navbar">
+              <Navbar />
+            </div>
+            <div className="row landing-content" >
+              <div className="col-1"></div>
+              <div className="col-8"><Landing/></div>
+              <div className="col-3"></div>
+            </div>
           </div>
         </section>
         <section id="about"><About/></section>
         <section id="products"><Products/></section>
         <section id="services"><Services/></section>
-        <section id="contact"><Contact/></section>
+        <div id="contact"><Contact/></div>
       </div>
     );
 }

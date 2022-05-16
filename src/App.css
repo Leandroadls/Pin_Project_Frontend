@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.section-services{
+  background-image: url('./images/section4-image.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.section-products{
+  background-image: url('./images/section3-image.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: #f2f4f1;
+  background-position: center;
+}
+
+.section-products-description{
+  background-color: #E0752F;
+}
+

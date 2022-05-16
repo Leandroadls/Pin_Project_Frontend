@@ -1,8 +1,7 @@
 .section-landing{
-    color: white;
-    width: 1366px;
-    background-image: url('../public/images/slider-1.png');
+    background-image: url('../images/slider-1.png');
     background-repeat: no-repeat;
+    background-size: cover;
 }  
   
     .button-landing{
@@ -45,7 +44,7 @@
         opacity: 1;
         padding-bottom: 70px;
     }
-}
+
 
 .landing-content{
     height: 672px;
