@@ -1,3 +1,56 @@
-#contact{
-    background-color: #f2f4f1;
+
+.section-contact{
+ 
+    h2 {
+        font: normal normal 600 39px/45px Poppins;
+        color: black;
+
+        > span {
+            display: block;
+            color: #E0752F;
+        }
+    }
+
+    p {
+        font: normal normal normal 16px/28px Roboto;
+        text-align: left;
+        color: #000;
+    }
+
+  .section-image-container{
+    margin-top: 100px;
+    @media only screen and (max-width: 600px) {
+        img {
+            width: 100%;
+        }
+    }
+  }
+
+  .contact-form {
+      input, textarea {
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #DCE1DA;
+        border-radius: 0px;
+
+        &:focus, &:hover {
+            color: #212529;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid #DCE1DA;
+            border-radius: 0px;
+            outline: 0;
+            box-shadow: none;
+        }
+      }
+
+       
+    button{
+        background: #E0752F;
+        border-radius: 25px;
+        border-color: #E0752F;
+        opacity: 1;
+    }
+  }
+
 }

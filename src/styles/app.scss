@@ -11,3 +11,55 @@
 @import "products";
 @import "services";
 @import "contact";
+
+body {
+    background-color: #fff;
+}
+
+.navbar {
+    background-color: transparent;
+    border-bottom: 1px solid #E0752F;
+
+    &.scrolled {
+        background-color: #E0752F;
+    }
+}
+
+.section-general {
+    height: 100vh;
+    min-height: 500px;
+    position: relative;
+
+    &.products, &.contact { 
+        background: linear-gradient(90deg, #F2F4F1 70%, #DCE1DA 30%); 
+    }
+
+    &.products {
+        padding-top: 112px;
+    }
+
+    &.about {
+        padding-top: 167px;
+        @media only screen and (max-width: 600px) {
+            padding-top: 50px;
+        }
+    }
+
+    &.services {
+        background-image: url('../images/section4-image.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-top: 144px;
+
+        @media only screen and (max-width: 600px) {
+            background-size: cover;
+        }
+    }
+
+    &.contact {
+        padding-top: 120px;
+
+    }
+
+}

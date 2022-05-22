@@ -2,9 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 167px;
-    margin-bottom: 164px;
-
+  
     h2 {
         font: normal normal 600 39px/45px Poppins;
         color: black;
@@ -18,14 +16,22 @@
     p {
         font: normal normal normal 16px/28px Roboto;
         text-align: left;
+        color: #000;
     }
 }
 .about-organge-bar{
-
+    position: absolute;
+    top: 20%;
+    left: 0px;
     width: 32px;
     height: 384px;
-/* UI Properties */
+    /* UI Properties */
     background: var(--unnamed-color-e0752f) 0% 0% no-repeat padding-box;
     background: #E0752F 0% 0% no-repeat padding-box;
     opacity: 1;
+
+    @media only screen and (max-width: 600px) {
+        top: 10%;
+        width: 5px;
+    }
 }
