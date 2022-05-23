@@ -11121,9 +11121,7 @@ textarea.form-control-lg {
   }
 }
 .section-navbar {
-  border-bottom: 1px solid #E0752F;
   height: 96px;
-  margin-left: 0px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -11232,6 +11230,7 @@ textarea.form-control-lg {
   position: absolute;
   bottom: 0px;
   right: 0px;
+  padding-right: 12px;
 }
 @media only screen and (max-width: 600px) {
   .section-products #carouselProduct {

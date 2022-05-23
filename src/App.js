@@ -9,24 +9,30 @@ import "./App.css";
 import "./styles/app.css";
 
 function App() {
-
-  return ( 
-  <>
-  <header>
-   <Navbar />
-  </header>
-    <main>
-      <Landing />
-      <About />
-      <Products />
-      <Services />
-      <Contact />
+  return (
+    <>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <div id="#">
+          <Landing />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="products">
+          <Products />
+        </div>
+        <div id="services">
+          <Services />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
       </main>
-      <footer>
-        Footer
-      </footer>
-    
-</>
+      <footer>Footer</footer>
+    </>
   );
 }
 

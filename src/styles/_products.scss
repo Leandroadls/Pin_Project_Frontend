@@ -1,6 +1,7 @@
 
 .section-products{
     position: relative;
+    
 
     #carouselProduct{
         height: 304px;
@@ -8,6 +9,7 @@
         position: absolute;
         bottom: 0px;
         right: 0px;
+        padding-right: 12px;
 
         @media only screen and (max-width: 600px) {
             height: 304px;
