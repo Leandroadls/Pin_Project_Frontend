@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logoImg from "../../images/top-logo.png";
 
 function Navbar() {
   const [colorChange, setColorchange] = useState("");
@@ -16,7 +17,7 @@ function Navbar() {
       className={`section-navbar navbar navbar-expand-md navbar-dark px-4 fixed-top ${colorChange}`}
     >
       <a className="navbar-brand" href="#">
-        Navbar
+        <img src={logoImg} />
       </a>
       <button
         className="navbar-toggler"
@@ -29,10 +30,13 @@ function Navbar() {
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
+      <div
+        className="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="/">
+            <a className="nav-link" aria-current="page" href="/">
               Home
             </a>
           </li>
