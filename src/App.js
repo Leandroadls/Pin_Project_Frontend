@@ -38,9 +38,3 @@ function App() {
 
 export default App;
 
-// <Navbar></Navbar>
-// <Landing></Landing>
-// <About></About>
-// <Products></Products>
-// <Services></Services>
-// <Contact></Contact>
