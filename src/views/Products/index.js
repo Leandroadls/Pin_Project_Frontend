@@ -11,25 +11,36 @@ function Products() {
   useEffect(() => {
     axios("https://pin-backtest-ramiro.herokuapp.com/api/products")
       .then((response) => {
-        setProducts(response.data.results);
+        setProducts(response.data.data);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
 
-  
-
   return (
-    <section className="section-general products">
-      <div className="container">
-        <div className="row align-items-center section-products">
-          <ProductsList products={products} />
-          <img src={productImg} />
+    <div>
+      <section className="section-general products">
+        <div className="container">
+          <div className="row align-items-center section-products">
+            {<ProductsList products={products} />}
+            <img src={productImg} />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 
 export default Products;
+
+/* return (
+  <section className="section-general products">
+    <div className="container">
+      <div className="row align-items-center section-products">
+        { <ProductsList products={products} /> }
+        <img src={productImg} />
+      </div>
+    </div>
+  </section>
+); */
