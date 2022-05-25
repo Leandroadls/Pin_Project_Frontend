@@ -9,7 +9,7 @@ function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios("https://pin-backtest-ramiro.herokuapp.com/api/products")
+    axios("https://grupo4-backend.herokuapp.com/api/products")
       .then((response) => {
         setProducts(response.data.data);
       })
