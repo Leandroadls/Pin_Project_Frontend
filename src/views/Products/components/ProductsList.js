@@ -15,35 +15,20 @@ function ProductsList(props) {
         className="carousel slide"
         data-bs-ride="carousel"
       >
-        <div className="carousel-indicators">
-          {/*           <button
-            type="button"
-            data-bs-target="#carouselProduct"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button> */}
-        </div>
-        {props.products.map((product, index) => {
-          return (
-            <div className="carousel-inner">
-              <div className="carousel-item active">
+        <div className="carousel-inner">
+          {props.products.map((product, index) => {
+            return (
+              <div className={`carousel-item ${index === 0 ? "active" : ""}`}>
                 <div className="carousel-caption align-items-center">
                   <div className="col-12 text-center">
                     <h4>{product.name}</h4>
                     <h2>{product.description}</h2>
-                    {/*<p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem aperiam.
-                  </p> */}
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
-
+            );
+          })}
+        </div>
         <button
           className="carousel-control-prev"
           type="button"
