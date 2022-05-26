@@ -31,7 +31,7 @@ function Navbar() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div
-        className="collapse navbar-collapse justify-content-end"
+        className="navbar-menu collapse navbar-collapse justify-content-end"
         id="navbarNav"
       >
         <ul className="navbar-nav">

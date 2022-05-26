@@ -11134,6 +11134,12 @@ textarea.form-control-lg {
   color: white;
 }
 
+.navbar-menu {
+  margin-right: 100px;
+  color: white;
+  font-weight: bold;
+}
+
 .section-landing .masthead {
   height: 100vh;
   min-height: 500px;
