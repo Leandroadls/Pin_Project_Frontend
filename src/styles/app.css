@@ -11162,13 +11162,33 @@ textarea.form-control-lg {
 }
 .section-landing .carousel-item .carousel-caption {
   bottom: unset;
-  top: 40%;
+  top: 30%;
   text-align: unset;
+  width: 70%;
 }
-.section-landing .carousel-item .carousel-caption .col-12 {
+@media only screen and (max-width: 600px) {
+  .section-landing .carousel-item .carousel-caption {
+    width: 90%;
+    top: 24%;
+    left: 10%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 965px) {
+  .section-landing .carousel-item .carousel-caption {
+    top: 20%;
+    width: 80%;
+  }
+}
+.section-landing .carousel-item .col-12 {
   width: 50%;
 }
-.section-landing .carousel-item .carousel-caption h2, .section-landing .carousel-item .carousel-caption .h2 {
+@media only screen and (max-width: 600px) {
+  .section-landing .carousel-item .col-12 {
+    width: unset;
+  }
+}
+.section-landing .carousel-item h2, .section-landing .carousel-item .h2 {
   text-align: left;
   font: normal normal 450 48px/48px Poppins;
   letter-spacing: 0.67px;
@@ -11176,7 +11196,12 @@ textarea.form-control-lg {
   opacity: 1;
   margin-bottom: 30px;
 }
-.section-landing .carousel-item .carousel-caption p {
+@media only screen and (max-width: 375px) {
+  .section-landing .carousel-item h2, .section-landing .carousel-item .h2 {
+    font: normal normal 450 35px/35px Poppins;
+  }
+}
+.section-landing .carousel-item p {
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-21) var(--unnamed-font-family-roboto);
   text-align: left;
   letter-spacing: 0.22px;
@@ -11185,7 +11210,8 @@ textarea.form-control-lg {
   padding-bottom: 30px;
 }
 .section-landing .carousel-indicators {
-  bottom: 10%;
+  bottom: 20%;
+  justify-content: left;
 }
 .section-landing .carousel-indicators button {
   border-radius: 50%;
@@ -11196,6 +11222,12 @@ textarea.form-control-lg {
 .section-landing .carousel-indicators .active {
   background-color: #E0752F;
 }
+@media only screen and (max-width: 600px) {
+  .section-landing .carousel-indicators {
+    bottom: 15%;
+    justify-content: center;
+  }
+}
 .section-landing .button-landing {
   background: #E0752F;
   border-radius: 25px;
@@ -11203,9 +11235,6 @@ textarea.form-control-lg {
   opacity: 1;
   width: 144px;
   height: 48px;
-}
-.section-landing .carousel-indicators {
-  justify-content: unset;
 }
 
 .section-about {
@@ -11248,6 +11277,11 @@ textarea.form-control-lg {
 .section-products {
   position: relative;
 }
+@media only screen and (max-width: 600px) {
+  .section-products {
+    flex-wrap: wrap-reverse;
+  }
+}
 .section-products #carouselProduct {
   height: 304px;
   width: 471px;
@@ -11263,13 +11297,28 @@ textarea.form-control-lg {
     position: unset;
     bottom: unset;
     right: unset;
+    padding-right: 0;
   }
+}
+.section-products #carouselProduct .carousel-control-prev {
+  left: unset;
+  right: 10%;
+  padding-bottom: 2%;
+  padding-right: 3%;
+  align-items: flex-end;
+}
+.section-products #carouselProduct .carousel-control-next {
+  align-items: flex-end;
+  padding-bottom: 2%;
+  padding-right: 3%;
 }
 .section-products #carouselProduct .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22'%3E%3Cdefs%3E%3Cstyle%3E.a{fill:none;stroke:%23343434;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}%3C/style%3E%3C/defs%3E%3Cg transform='translate(-1 -1)'%3E%3Cpath class='a' d='M22,12A10,10,0,1,1,12,2,10,10,0,0,1,22,12Z'/%3E%3Cpath class='a' d='M12,16l4-4L12,8'/%3E%3Cpath class='a' d='M8,12h8'/%3E%3C/g%3E%3C/svg%3E");
+  opacity: 1;
 }
 .section-products #carouselProduct .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22'%3E%3Cdefs%3E%3Cstyle%3E.a{fill:none;stroke:%23343434;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}%3C/style%3E%3C/defs%3E%3Cg transform='translate(-1 -1)'%3E%3Cpath class='a' d='M22,12A10,10,0,1,1,12,2,10,10,0,0,1,22,12Z'/%3E%3Cpath class='a' d='M12,8,8,12l4,4'/%3E%3Cpath class='a' d='M16,12H8'/%3E%3C/g%3E%3C/svg%3E");
+  opacity: 1;
 }
 .section-products #carouselProduct .carousel-inner {
   height: 100%;
@@ -11316,15 +11365,19 @@ textarea.form-control-lg {
   text-align: left;
   color: #000;
 }
-.section-contact .section-image-container {
+
+.section-image-container {
   margin-top: 100px;
 }
 @media only screen and (max-width: 600px) {
-  .section-contact .section-image-container img {
+  .section-image-container img {
     width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
   }
 }
-.section-contact .contact-form input, .section-contact .contact-form textarea {
+
+.contact-form input, .contact-form textarea {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #DCE1DA;
@@ -11332,7 +11385,7 @@ textarea.form-control-lg {
   margin-bottom: 10px;
   font-weight: bold;
 }
-.section-contact .contact-form input:focus, .section-contact .contact-form input:hover, .section-contact .contact-form textarea:focus, .section-contact .contact-form textarea:hover {
+.contact-form input:focus, .contact-form input:hover, .contact-form textarea:focus, .contact-form textarea:hover {
   color: #212529;
   background-color: transparent;
   border: none;
@@ -11341,13 +11394,22 @@ textarea.form-control-lg {
   outline: 0;
   box-shadow: none;
 }
-.section-contact .contact-form .button-contact {
+.contact-form .button-contact {
   background: #E0752F;
   border-radius: 25px;
   border-color: #E0752F;
   opacity: 1;
   width: 144px;
   height: 48px;
+}
+
+.footer {
+  background-color: #343434;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: #DCE1DA;
 }
 
 body {
@@ -11370,8 +11432,18 @@ body {
 .section-general.products, .section-general.contact {
   background: linear-gradient(90deg, #F2F4F1 70%, #DCE1DA 30%);
 }
+@media only screen and (max-width: 600px) {
+  .section-general.products, .section-general.contact {
+    background: unset;
+  }
+}
 .section-general.products {
   padding-top: 112px;
+}
+@media only screen and (max-width: 600px) {
+  .section-general.products {
+    padding-top: 70px;
+  }
 }
 .section-general.about {
   padding-top: 167px;

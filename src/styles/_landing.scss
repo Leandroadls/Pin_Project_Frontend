@@ -23,66 +23,87 @@
             background-image: url('../images/slider-1.png');
         }
 
-        .carousel-caption {
-            bottom: unset;
-            top: 40%;
-            text-align: unset;
+    .carousel-caption {
+        bottom: unset;
+        top: 30%;
+        text-align: unset;
+        width: 70%;
             
-            .col-12{
-                width: 50%;
-            }
+            
+        @media only screen and (max-width: 600px) {
+            width: 90%;
+            top: 24%;
+            left: 10%;
+            text-align: center;
+        }    
 
-            h2 {
-        // padding-top: 158px;
-        // padding-bottom: 30px;
+            @media only screen and (max-width: 965px) {
+                top: 20%;
+                width: 80%;
+            }
+        }
+            
+    .col-12{
+            width: 50%;
+
+            @media only screen and (max-width: 600px){
+            width: unset;
+            }
+    }
+    
+    h2 {
         text-align: left;
         font: normal normal 450 48px/48px Poppins;
         letter-spacing: 0.67px;
         color: #FFFFFF;
         opacity: 1;
-        margin-bottom: 30px;;
+        margin-bottom: 30px;
+
+            @media only screen and (max-width: 375px){
+                font: normal normal 450 35px/35px Poppins;
+            }
     }
 
-    p{
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-21) var(--unnamed-font-family-roboto);
-        text-align: left;
-        letter-spacing: 0.22px;
-        color: #FFFFFF;
-        opacity: 1;
-        padding-bottom: 30px;
-    }
+        p{
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-21) var(--unnamed-font-family-roboto);
+            text-align: left;
+            letter-spacing: 0.22px;
+            color: #FFFFFF;
+            opacity: 1;
+            padding-bottom: 30px;
         }
     }
     
 
-    .carousel-indicators{
-        bottom: 10%;
-        button{
-            border-radius: 50%;
-            width: 8px;
-            height: 8px;
-            background-color: #5F6368
-        }
+        .carousel-indicators{
 
-        .active {
-            background-color: #E0752F;
+        bottom: 20%;
+        justify-content: left;
+        
+            button{
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+                background-color: #5F6368
+            }
+
+            .active {
+                background-color: #E0752F;
+            }
+        
+        @media only screen and (max-width: 600px){
+            bottom: 15%;
+            justify-content: center;
+        }    
         }
-    }
     
-    .button-landing{
+        .button-landing{
         background: #E0752F;
         border-radius: 25px;
         border-color: #E0752F;
         opacity: 1;
         width: 144px;
         height: 48px;
-    }
-
-
-    
-
-    .carousel-indicators{
-        justify-content: unset;
-    }
+        }
 }  
 
