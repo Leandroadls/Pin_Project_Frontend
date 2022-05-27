@@ -32,6 +32,9 @@
         border: none;
         border-bottom: 2px solid #DCE1DA;
         border-radius: 0px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        
 
         &:focus, &:hover {
             color: #212529;
@@ -44,12 +47,14 @@
         }
       }
 
-       
-    button{
+
+    .button-contact{
         background: #E0752F;
         border-radius: 25px;
         border-color: #E0752F;
         opacity: 1;
+        width: 144px;
+        height: 48px;
     }
   }
 

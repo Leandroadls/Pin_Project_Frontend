@@ -88,7 +88,7 @@ function Contact() {
                     <textarea
                       onChange={handleChange}
                       className="form-control"
-                      placeholder="Type your message here"
+                      placeholder="Message"
                       rows="5"
                       id="message"
                       name="message"
@@ -98,7 +98,7 @@ function Contact() {
               </div>
               <div className="form-group">        
                 <div className="col-sm-offset-2 col-sm-10">
-                  <button type="submit" className="btn btn-default">Submit</button>
+                  <button type="submit" className="btn btn-primary btn-lg button-contact">Send</button>
                 </div>
               </div>  
             </form>

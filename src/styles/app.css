@@ -11201,6 +11201,8 @@ textarea.form-control-lg {
   border-radius: 25px;
   border-color: #E0752F;
   opacity: 1;
+  width: 144px;
+  height: 48px;
 }
 .section-landing .carousel-indicators {
   justify-content: unset;
@@ -11327,6 +11329,8 @@ textarea.form-control-lg {
   border: none;
   border-bottom: 2px solid #DCE1DA;
   border-radius: 0px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 .section-contact .contact-form input:focus, .section-contact .contact-form input:hover, .section-contact .contact-form textarea:focus, .section-contact .contact-form textarea:hover {
   color: #212529;
@@ -11337,11 +11341,13 @@ textarea.form-control-lg {
   outline: 0;
   box-shadow: none;
 }
-.section-contact .contact-form button {
+.section-contact .contact-form .button-contact {
   background: #E0752F;
   border-radius: 25px;
   border-color: #E0752F;
   opacity: 1;
+  width: 144px;
+  height: 48px;
 }
 
 body {
