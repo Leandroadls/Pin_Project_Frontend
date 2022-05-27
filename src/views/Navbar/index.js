@@ -36,7 +36,7 @@ function Navbar() {
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" aria-current="page" href="/">
+            <a className="nav-link" aria-current="page" href="#hero">
               Home
             </a>
           </li>
