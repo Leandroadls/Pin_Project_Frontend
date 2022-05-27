@@ -11163,6 +11163,38 @@ textarea.form-control-lg {
 .section-landing .carousel-item .carousel-caption {
   bottom: unset;
   top: 40%;
+  text-align: unset;
+}
+.section-landing .carousel-item .carousel-caption .col-12 {
+  width: 50%;
+}
+.section-landing .carousel-item .carousel-caption h2, .section-landing .carousel-item .carousel-caption .h2 {
+  text-align: left;
+  font: normal normal 450 48px/48px Poppins;
+  letter-spacing: 0.67px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+.section-landing .carousel-item .carousel-caption p {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-21) var(--unnamed-font-family-roboto);
+  text-align: left;
+  letter-spacing: 0.22px;
+  color: #FFFFFF;
+  opacity: 1;
+  padding-bottom: 30px;
+}
+.section-landing .carousel-indicators {
+  bottom: 10%;
+}
+.section-landing .carousel-indicators button {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #5F6368;
+}
+.section-landing .carousel-indicators .active {
+  background-color: #E0752F;
 }
 .section-landing .button-landing {
   background: #E0752F;
@@ -11170,24 +11202,8 @@ textarea.form-control-lg {
   border-color: #E0752F;
   opacity: 1;
 }
-.section-landing h2, .section-landing .h2 {
-  padding-top: 158px;
-  padding-bottom: 30px;
-  /* UI Properties */
-  text-align: left;
-  font: normal normal 450 48px/48px Poppins;
-  letter-spacing: 0.67px;
-  color: #FFFFFF;
-  opacity: 1;
-}
-.section-landing p {
-  /* UI Properties */
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-21) var(--unnamed-font-family-roboto);
-  text-align: left;
-  letter-spacing: 0.22px;
-  color: #FFFFFF;
-  opacity: 1;
-  padding-bottom: 70px;
+.section-landing .carousel-indicators {
+  justify-content: unset;
 }
 
 .section-about {

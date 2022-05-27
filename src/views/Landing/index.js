@@ -25,9 +25,9 @@ function Landing() {
           ></button>
         </div>
         <div className="carousel-inner">
-          <div id="slide1" className="carousel-item active">
-            <div className="carousel-caption align-items-center">
-              <div className="col-12 text-center">
+          <div id="slide1" className="carousel-item active" data-bs-pause="hover">
+            <div className="carousel-caption">
+              <div className="col-12">
                 <h2>Sed ut perspiciatis unde omnis iste natus</h2>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -50,7 +50,7 @@ function Landing() {
             }}
           >
             <div className="carousel-caption">
-              <div className="col-12 text-center">
+              <div className="col-12">
                 <h2>Sed ut perspiciatis unde omnis iste natus 2</h2>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -73,7 +73,7 @@ function Landing() {
             }}
           >
             <div className="carousel-caption">
-              <div className="col-12 text-center">
+              <div className="col-12">
                 <h2>Sed ut perspiciatis unde omnis iste natus 3</h2>
                 <p>
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
