@@ -1,8 +1,18 @@
+.section-footer{
+    position: relative;
+}
+
 .footer {
+    display: flex;
+    justify-content: space-between;
     background-color: #343434;
-    position: fixed;
+    position:absolute;
     bottom: 0;
     width: 100%;
-    height: 40px;
     color: #DCE1DA;
+    padding: 1%
+}
+
+.botton-logo{
+    right: 0;
 }

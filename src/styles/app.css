@@ -11367,13 +11367,11 @@ textarea.form-control-lg {
 }
 
 .section-image-container {
-  margin-top: 100px;
+  margin-top: 8%;
 }
 @media only screen and (max-width: 600px) {
-  .section-image-container img {
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 60px;
+  .section-image-container {
+    display: none;
   }
 }
 
@@ -11403,13 +11401,23 @@ textarea.form-control-lg {
   height: 48px;
 }
 
+.section-footer {
+  position: relative;
+}
+
 .footer {
+  display: flex;
+  justify-content: space-between;
   background-color: #343434;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  height: 40px;
   color: #DCE1DA;
+  padding: 1%;
+}
+
+.botton-logo {
+  right: 0;
 }
 
 body {
@@ -11422,6 +11430,10 @@ body {
 }
 .navbar.scrolled {
   background-color: #E0752F;
+}
+
+.alert-success {
+  margin-top: 10px;
 }
 
 .section-general {
@@ -11438,27 +11450,17 @@ body {
   }
 }
 .section-general.products {
-  padding-top: 112px;
-}
-@media only screen and (max-width: 600px) {
-  .section-general.products {
-    padding-top: 70px;
-  }
+  padding-top: 10%;
 }
 .section-general.about {
-  padding-top: 167px;
-}
-@media only screen and (max-width: 600px) {
-  .section-general.about {
-    padding-top: 50px;
-  }
+  padding-top: 11%;
 }
 .section-general.services {
   background-image: url("../images/section4-image.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
-  padding-top: 144px;
+  padding-top: 13%;
 }
 @media only screen and (max-width: 600px) {
   .section-general.services {
@@ -11466,7 +11468,7 @@ body {
   }
 }
 .section-general.contact {
-  padding-top: 120px;
+  padding-top: 10%;
 }
 
 /*# sourceMappingURL=app.css.map */

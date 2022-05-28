@@ -19,13 +19,14 @@
 }
 
   .section-image-container{
-    margin-top: 100px;
+    margin-top: 8%;
     @media only screen and (max-width: 600px) {
-        img {
-            width: 100%;
-            margin-top: 40px;
-            margin-bottom: 60px;
-        }
+        display: none;
+        // img {
+        //     width: 100%;
+        //     margin-top: 40px;
+        //     margin-bottom: 60px;
+        // }
     }
   }
 
@@ -59,5 +60,7 @@
         width: 144px;
         height: 48px;
     }
-  }
+}
+
+
 
