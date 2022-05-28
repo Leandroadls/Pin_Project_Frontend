@@ -11283,8 +11283,8 @@ textarea.form-control-lg {
   }
 }
 .section-products #carouselProduct {
-  height: 304px;
-  width: 471px;
+  height: 50%;
+  width: 50%;
   position: absolute;
   bottom: 0px;
   right: 0px;
@@ -11304,13 +11304,13 @@ textarea.form-control-lg {
   left: unset;
   right: 10%;
   padding-bottom: 2%;
-  padding-right: 3%;
+  padding-right: 6%;
   align-items: flex-end;
 }
 .section-products #carouselProduct .carousel-control-next {
   align-items: flex-end;
   padding-bottom: 2%;
-  padding-right: 3%;
+  padding-right: 6%;
 }
 .section-products #carouselProduct .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22'%3E%3Cdefs%3E%3Cstyle%3E.a{fill:none;stroke:%23343434;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}%3C/style%3E%3C/defs%3E%3Cg transform='translate(-1 -1)'%3E%3Cpath class='a' d='M22,12A10,10,0,1,1,12,2,10,10,0,0,1,22,12Z'/%3E%3Cpath class='a' d='M12,16l4-4L12,8'/%3E%3Cpath class='a' d='M8,12h8'/%3E%3C/g%3E%3C/svg%3E");
@@ -11335,12 +11335,7 @@ textarea.form-control-lg {
 }
 .section-products #carouselProduct .carousel-item .carousel-caption {
   bottom: unset;
-  top: 40%;
-}
-@media only screen and (max-width: 600px) {
-  .section-products #carouselProduct .carousel-item .carousel-caption {
-    top: 10%;
-  }
+  top: 25%;
 }
 .section-products img {
   max-height: 70vh;
@@ -11368,11 +11363,6 @@ textarea.form-control-lg {
 
 .section-image-container {
   margin-top: 8%;
-}
-@media only screen and (max-width: 600px) {
-  .section-image-container {
-    display: none;
-  }
 }
 
 .contact-form input, .contact-form textarea {

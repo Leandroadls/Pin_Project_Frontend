@@ -106,7 +106,7 @@ function Contact() {
             {showErrorAlert && <div className="alert alert-success">An error has occurred</div>}
           </div>
           <div className="col-12  col-md-7 section-image-container">
-            <img src={contactImg}  />
+            <img className='img-fluid' src={contactImg}/>
           </div>
         </div>
       
