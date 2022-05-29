@@ -11122,6 +11122,13 @@ textarea.form-control-lg {
 }
 .section-navbar {
   height: 96px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.navbar-nav {
+  background-color: #E0752F;
+  opacity: 0.8;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -11135,9 +11142,14 @@ textarea.form-control-lg {
 }
 
 .navbar-menu {
-  margin-right: 100px;
   color: white;
   font-weight: bold;
+  text-align: right;
+  margin-right: 1%;
+}
+
+.navbar-collapse {
+  margin-top: 5%;
 }
 
 .section-landing .masthead {

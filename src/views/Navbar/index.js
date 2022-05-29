@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`section-navbar navbar navbar-expand-md navbar-dark px-4 fixed-top ${colorChange}`}
+      className={`section-navbar navbar navbar-expand-md navbar-light px-4 fixed-top ${colorChange}`}
     >
       <a className="navbar-brand" href="#">
         <img src={logoImg} />

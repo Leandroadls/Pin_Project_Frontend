@@ -1,15 +1,15 @@
 
 
 .section-navbar{
-    //background-color: transparent;
-    //border-bottom: 1px solid #E0752F;
     height: 96px;
-    //padding-right: 110.5px;
-    //align-items: center;
-    //margin-left: 0px;
-
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
+.navbar-nav{
+    background-color: #E0752F;
+    opacity: .8;
+}
 .navbar-light .navbar-nav .nav-link{
     color: white;
     font-size: 16px;
@@ -22,7 +22,12 @@
 }
 
 .navbar-menu{
-    margin-right: 100px;
     color: white;
     font-weight: bold;
+    text-align: right;
+    margin-right: 1%;
+}
+
+.navbar-collapse{
+    margin-top: 5%;
 }
