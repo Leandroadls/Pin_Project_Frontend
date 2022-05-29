@@ -11168,16 +11168,16 @@ textarea.form-control-lg {
 }
 @media only screen and (max-width: 600px) {
   .section-landing .carousel-item .carousel-caption {
-    width: 90%;
-    top: 24%;
+    width: 83%;
+    top: 25%;
     left: 10%;
     text-align: center;
   }
 }
-@media only screen and (max-width: 965px) {
+@media screen and (min-device-width: 601px) and (max-device-width: 1107px) {
   .section-landing .carousel-item .carousel-caption {
-    top: 20%;
-    width: 80%;
+    top: 15%;
+    width: 100%;
   }
 }
 .section-landing .carousel-item .col-12 {
@@ -11213,6 +11213,16 @@ textarea.form-control-lg {
   bottom: 20%;
   justify-content: left;
 }
+@media screen and (max-width: 600px) {
+  .section-landing .carousel-indicators {
+    bottom: 10%;
+  }
+}
+@media screen and (min-device-width: 601px) and (max-device-width: 1107px) {
+  .section-landing .carousel-indicators {
+    bottom: 15%;
+  }
+}
 .section-landing .carousel-indicators button {
   border-radius: 50%;
   width: 8px;
@@ -11226,6 +11236,12 @@ textarea.form-control-lg {
   .section-landing .carousel-indicators {
     bottom: 15%;
     justify-content: center;
+  }
+}
+@media screen and (min-device-width: 601px) and (max-device-width: 1107px) {
+  .section-landing .carousel-item {
+    height: 70vh;
+    min-height: 670px;
   }
 }
 .section-landing .button-landing {
@@ -11362,7 +11378,12 @@ textarea.form-control-lg {
 }
 
 .section-image-container {
-  margin-top: 8%;
+  margin-top: 3%;
+}
+@media only screen and (max-width: 768px) {
+  .section-image-container {
+    display: none;
+  }
 }
 
 .contact-form input, .contact-form textarea {
@@ -11382,7 +11403,15 @@ textarea.form-control-lg {
   outline: 0;
   box-shadow: none;
 }
-.contact-form .button-contact {
+
+@media only screen and (max-width: 600px) {
+  .contact-info {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+
+.button-contact {
   background: #E0752F;
   border-radius: 25px;
   border-color: #E0752F;
@@ -11393,6 +11422,12 @@ textarea.form-control-lg {
 
 .section-footer {
   position: relative;
+  padding-bottom: 3%;
+}
+@media only screen and (max-width: 600px) {
+  .section-footer {
+    padding-top: 24%;
+  }
 }
 
 .footer {
@@ -11404,6 +11439,11 @@ textarea.form-control-lg {
   width: 100%;
   color: #DCE1DA;
   padding: 1%;
+  min-height: 50px;
+}
+
+.copyright {
+  width: 50%;
 }
 
 .botton-logo {
@@ -11431,6 +11471,12 @@ body {
   min-height: 500px;
   position: relative;
 }
+@media screen and (min-device-width: 601px) and (max-device-width: 1107px) {
+  .section-general {
+    height: 70vh;
+    min-height: 700px;
+  }
+}
 .section-general.products, .section-general.contact {
   background: linear-gradient(90deg, #F2F4F1 70%, #DCE1DA 30%);
 }
@@ -11442,8 +11488,18 @@ body {
 .section-general.products {
   padding-top: 10%;
 }
+@media only screen and (max-width: 280px) {
+  .section-general.products {
+    padding-top: 50%;
+  }
+}
 .section-general.about {
   padding-top: 11%;
+}
+@media screen and (min-device-width: 601px) and (max-device-width: 1107px) {
+  .section-general.about {
+    padding-top: 20%;
+  }
 }
 .section-general.services {
   background-image: url("../images/section4-image.png");

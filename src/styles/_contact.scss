@@ -1,6 +1,6 @@
 
 .section-contact{
- 
+
     h2 {
         font: normal normal 600 39px/45px Poppins;
         color: black;
@@ -18,20 +18,16 @@
     }    
 }
 
-  .section-image-container{
-    margin-top: 8%;
-    // @media only screen and (max-width: 600px) {
-    //     display: none;
-    //     // img {
-    //     //     width: 100%;
-    //     //     margin-top: 40px;
-    //     //     margin-bottom: 60px;
-    //     // }
-    // }
-  }
+.section-image-container{
+    margin-top: 3%;
 
-  .contact-form {
-      input, textarea {
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.contact-form {
+    input, textarea {
         background-color: transparent;
         border: none;
         border-bottom: 2px solid #DCE1DA;
@@ -39,7 +35,6 @@
         margin-bottom: 10px;
         font-weight: bold;
         
-
         &:focus, &:hover {
             color: #212529;
             background-color: transparent;
@@ -49,7 +44,15 @@
             outline: 0;
             box-shadow: none;
         }
-      }
+    }   
+}
+
+.contact-info{
+    @media only screen and (max-width: 600px) {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
 
 
     .button-contact{
@@ -60,7 +63,7 @@
         width: 144px;
         height: 48px;
     }
-}
+
 
 
 
