@@ -34,6 +34,7 @@ function Contact() {
       })
       .catch(function (error) {
         setShowErrorAlert(true);
+        console.log(error.response.data)
         // if (error.response) {
 
         // }
