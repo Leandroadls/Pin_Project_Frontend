@@ -11,6 +11,7 @@
 @import "products";
 @import "services";
 @import "contact";
+@import "footer";
 
 body {
     background-color: #fff;
@@ -25,23 +26,39 @@ body {
     }
 }
 
+.alert-success{
+    margin-top: 10px;
+}
+
 .section-general {
     height: 100vh;
     min-height: 500px;
     position: relative;
 
+    @media screen and (min-device-width: 601px) and (max-device-width: 1107px) { 
+        height: 70vh;
+        min-height: 700px;
+    }
+
     &.products, &.contact { 
         background: linear-gradient(90deg, #F2F4F1 70%, #DCE1DA 30%); 
+
+        @media only screen and (max-width: 600px){
+        background: unset;
+        }
     }
 
     &.products {
-        padding-top: 112px;
+        padding-top: 10%;
+        @media only screen and (max-width: 280px) {
+            padding-top: 50%;
+        }
     }
 
     &.about {
-        padding-top: 167px;
-        @media only screen and (max-width: 600px) {
-            padding-top: 50px;
+        padding-top: 11%;
+        @media screen and (min-device-width: 601px) and (max-device-width: 1107px) { 
+            padding-top: 20%;
         }
     }
 
@@ -50,7 +67,7 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right center;
-        padding-top: 144px;
+        padding-top: 13%;
 
         @media only screen and (max-width: 600px) {
             background-size: cover;
@@ -58,8 +75,6 @@ body {
     }
 
     &.contact {
-        padding-top: 120px;
-
+        padding-top: 10%;
     }
-
 }

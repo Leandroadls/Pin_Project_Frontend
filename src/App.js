@@ -5,6 +5,7 @@ import About from "./views/About";
 import Services from "./views/Services";
 import Contact from "./views/Contact";
 import Products from "./views/Products";
+import Footer from "./views/Footer";
 import "./App.css";
 import "./styles/app.css";
 
@@ -31,7 +32,7 @@ function App() {
           <Contact />
         </div>
       </main>
-      <footer>Footer</footer>
+      <footer><Footer/></footer>
     </>
   );
 }

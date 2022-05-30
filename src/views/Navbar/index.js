@@ -14,7 +14,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`section-navbar navbar navbar-expand-md navbar-dark px-4 fixed-top ${colorChange}`}
+      className={`section-navbar navbar navbar-expand-md navbar-light px-4 fixed-top ${colorChange}`}
     >
       <a className="navbar-brand" href="#">
         <img src={logoImg} />
@@ -31,12 +31,12 @@ function Navbar() {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div
-        className="collapse navbar-collapse justify-content-end"
+        className="navbar-menu collapse navbar-collapse justify-content-end"
         id="navbarNav"
       >
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" aria-current="page" href="/">
+            <a className="nav-link" aria-current="page" href="#hero">
               Home
             </a>
           </li>

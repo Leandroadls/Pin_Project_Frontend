@@ -23,45 +23,101 @@
             background-image: url('../images/slider-1.png');
         }
 
-        .carousel-caption {
-            bottom: unset;
-            top: 40%;
+    .carousel-caption {
+        bottom: unset;
+        top: 30%;
+        text-align: unset;
+        width: 70%;
+            
+            
+        @media only screen and (max-width: 600px) {
+            width: 83%;
+            top: 25%;
+            left: 10%;
+            text-align: center;
+        }    
 
+        @media screen and (min-device-width: 601px) and (max-device-width: 1107px) { 
+            top: 15%;
+            width: 100%;
         }
+        
+    }
+            
+    .col-12{
+            width: 50%;
+
+            @media only screen and (max-width: 600px){
+            width: unset;
+            }
+    }
+    
+    h2 {
+        text-align: left;
+        font: normal normal 450 48px/48px Poppins;
+        letter-spacing: 0.67px;
+        color: #FFFFFF;
+        opacity: 1;
+        margin-bottom: 30px;
+
+            @media only screen and (max-width: 375px){
+                font: normal normal 450 35px/35px Poppins;
+            }
     }
 
+        p{
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-21) var(--unnamed-font-family-roboto);
+            text-align: left;
+            letter-spacing: 0.22px;
+            color: #FFFFFF;
+            opacity: 1;
+            padding-bottom: 30px;
+        }
+    }
+    
+
+    .carousel-indicators{
+        bottom: 20%;
+        justify-content: left;
+        @media screen and (max-width:600px){
+            bottom: 10%;
+        }
+        @media screen and (min-device-width: 601px) and (max-device-width: 1107px) { 
+            bottom: 15%;
+        }
+        
+            button{
+                border-radius: 50%;
+                width: 8px;
+                height: 8px;
+                background-color: #5F6368
+            }
+
+            .active {
+                background-color: #E0752F;
+            }
+        
+        @media only screen and (max-width: 600px){
+            bottom: 15%;
+            justify-content: center;
+        }    
+        }
+    
+    .carousel-item{
+        @media screen and (min-device-width: 601px) and (max-device-width: 1107px) { 
+            height: 70vh;
+            min-height: 670px;
+        }
+
+    }
     
     .button-landing{
         background: #E0752F;
         border-radius: 25px;
         border-color: #E0752F;
         opacity: 1;
-    }
-
-
-    h2 {
-        padding-top: 158px;
-        padding-bottom: 30px;
-        /* UI Properties */
-
-        text-align: left;
-        font: normal normal 450 48px/48px Poppins;
-        letter-spacing: 0.67px;
-        color: #FFFFFF;
-        opacity: 1;
-    }
-
-    p{
-
-        /* UI Properties */
-        font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-21) var(--unnamed-font-family-roboto);
-        text-align: left;
-        letter-spacing: 0.22px;
-        color: #FFFFFF;
-        opacity: 1;
-        padding-bottom: 70px;
-    }
-
-    
+        width: 144px;
+        height: 48px;
+        }
 }  
-  
+

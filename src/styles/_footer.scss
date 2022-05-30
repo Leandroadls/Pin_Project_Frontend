@@ -1,0 +1,29 @@
+.section-footer{
+    position: relative;
+    padding-bottom: 3%;
+    @media only screen and (max-width: 600px) {
+        padding-top: 24%;
+    } 
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #343434;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    color: #DCE1DA;
+    padding: 1%;
+    min-height: 50px;
+}
+
+.copyright{
+    width: 50%;
+}
+
+
+
+.botton-logo{
+    right: 0;
+}

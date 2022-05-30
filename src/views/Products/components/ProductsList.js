@@ -21,8 +21,10 @@ function ProductsList(props) {
               <div className={`carousel-item ${index === 0 ? "active" : ""}`}>
                 <div className="carousel-caption align-items-center">
                   <div className="col-12 text-center">
-                    <h2>{product.name}</h2>
-                    <h4>{product.description}</h4>
+                    <div>
+                      <h2>{product.name}</h2>
+                      <h4>{product.description}</h4>
+                    </div>
                   </div>
                 </div>
               </div>
