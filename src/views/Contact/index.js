@@ -22,6 +22,8 @@ function Contact() {
 
   const handleSubmit = function (event) {
     event.preventDefault();
+    setShowAlert(false);
+    setShowErrorAlert(false);
     axios({
       url: "https://grupo4-backend.herokuapp.com/api/messages",
       method: "POST",
@@ -34,7 +36,8 @@ function Contact() {
       })
       .catch(function (error) {
         setShowErrorAlert(true);
-        console.log(error.response.data)
+        const errorMessage = error.response.data;
+        console.log(errorMessage);
         // if (error.response) {
 
         // }
@@ -121,7 +124,9 @@ function Contact() {
               </div>
             )}
             {showErrorAlert && (
-              <div className="alert alert-success">An error has occurred</div>
+              <div className="alert alert-danger">
+                Your message was sent error
+              </div>
             )}
           </div>
           <div className="col-12  col-md-7 section-image-container">
