@@ -9,6 +9,14 @@ function Contact() {
     phone: "",
     message: "",
   });
+
+  const [errorMessage, setErrorMessage] = useState({
+    errorName: "",
+    errorEmail: "",
+    errorPhone: "",
+    errorMessage: "",
+  });
+
   const [showAlert, setShowAlert] = useState(false);
   const [showErrorAlert, setShowErrorAlert] = useState(false);
   const handleChange = function (event) {
@@ -32,12 +40,19 @@ function Contact() {
       .then((result) => {
         console.log(result);
         setShowAlert(true);
+
         setUserInput({ name: "", email: "", phone: "", message: "" });
       })
       .catch(function (error) {
         setShowErrorAlert(true);
-        const errorMessage = error.response.data;
-        console.log(errorMessage);
+        setErrorMessage({
+          errorName: error.response.data.name,
+          errorEmail: error.response.data.email,
+          errorPhone: error.response.data.phone,
+          errorMessage: error.response.data.message,
+        });
+        console.log(error.response.data.email);
+        console.log(error.response.data);
         // if (error.response) {
 
         // }
@@ -120,14 +135,19 @@ function Contact() {
             </form>
             {showAlert && (
               <div className="alert alert-success">
-                Your message was sent successfully
+                El mensaje se envio correctamente!
               </div>
             )}
             {showErrorAlert && (
               <div className="alert alert-danger">
-                Your message was sent error
+                {errorMessage.errorEmail}
               </div>
             )}
+            {/* {showErrorAlert && ( 
+              <div className="alert alert-danger">
+                Your message was sent error
+              </div>
+            )} */}
           </div>
           <div className="col-12  col-md-7 section-image-container">
             <img className="img-fluid" src={contactImg} />
